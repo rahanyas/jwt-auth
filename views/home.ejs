@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F1 Cars Gallery</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      margin-top: 50px;
+    }
+
+    .card-img-top {
+      object-fit: cover;
+      height: 200px;
+    }
+
+    .card-body h5 {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+
+    .card-body p {
+      font-size: 1rem;
+    }
+
+    .card {
+      margin-bottom: 30px;
+    }
+
+    .card-deck {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+ <% if (user) { %>
+   <h1>welcome <%= user %></h1>
+ <% } %>
+  <div class="container">
+    <h1 class="text-center mb-5">F1 Cars Gallery</h1>
+    <div class="card-deck">
+      <!-- Card 1 -->
+      <div class="card" style="width: 18rem;">
+        <img src="https://via.placeholder.com/300x200?text=Car+1" class="card-img-top" alt="F1 Car 1">
+        <div class="card-body">
+          <h5 class="card-title">Mercedes W12</h5>
+          <p class="card-text">The Mercedes W12 is one of the most dominant cars in recent F1 seasons. Featuring a sleek design and powerful engine.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card" style="width: 18rem;">
+        <img src="https://via.placeholder.com/300x200?text=Car+2" class="card-img-top" alt="F1 Car 2">
+        <div class="card-body">
+          <h5 class="card-title">Ferrari SF21</h5>
+          <p class="card-text">The Ferrari SF21 is an iconic car in Formula 1, known for its unique combination of speed and agility on the track.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card" style="width: 18rem;">
+        <img src="https://via.placeholder.com/300x200?text=Car+3" class="card-img-top" alt="F1 Car 3">
+        <div class="card-body">
+          <h5 class="card-title">Red Bull RB16</h5>
+          <p class="card-text">The Red Bull RB16 car has delivered consistent performance, with exceptional aerodynamics and handling.</p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card" style="width: 18rem;">
+        <img src="https://via.placeholder.com/300x200?text=Car+4" class="card-img-top" alt="F1 Car 4">
+        <div class="card-body">
+          <h5 class="card-title">McLaren MCL35</h5>
+          <p class="card-text">The McLaren MCL35 is a fast and reliable car, designed for optimal track performance and speed in Formula 1.</p>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card" style="width: 18rem;">
+        <img src="https://via.placeholder.com/300x200?text=Car+5" class="card-img-top" alt="F1 Car 5">
+        <div class="card-body">
+          <h5 class="card-title">Aston Martin AMR23</h5>
+          <p class="card-text">Aston Martin AMR23 features cutting-edge technology and superior speed, showcasing impressive engineering.</p>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card" style="width: 18rem;">
+        <img src="https://via.placeholder.com/300x200?text=Car+6" class="card-img-top" alt="F1 Car 6">
+        <div class="card-body">
+          <h5 class="card-title">Alpine A521</h5>
+          <p class="card-text">The Alpine A521 is a stunning car with sleek aerodynamics and a strong engine that delivers incredible speed on the track.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
