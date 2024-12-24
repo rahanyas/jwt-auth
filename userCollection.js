@@ -1,4 +1,7 @@
 import mongoose from "mongoose";
+import validator from "validator";
+
+const {isEmail} = validator;
 
 const userSchema = new mongoose.Schema({
   name : {
@@ -7,15 +10,18 @@ const userSchema = new mongoose.Schema({
   },
   email : {
     type : String,
-    required : true
+    required : [true, 'please enter an email'],
+    unique : true,
+    validate : [isEmail, 'please enter a valid email']
   },
   password : {
     type : String,
-    required : true
+    required : [true, 'please enter an password'],
+    minlength : [6, 'minimum password length is 6 charecters']
   }
 }, {timestamps : true });
 
 
-const userModel = new mongoose.model('User', userSchema);
+const userModel =  mongoose.model('User', userSchema);
 
 export default userModel;
